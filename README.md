@@ -65,7 +65,7 @@ Contoh file .sorun, misalkan nama filenya adalah **data.sorun**:
 -p||jpc||"D:\Program Files\jcpicker.exe"
 ```
 
-Setelah itu menambahkan file ke lokasi data sorun. Selanjutnya misalkan kita ingin membuka direktori pictures maka kita dapat menuliskannya menjadi:
+Setelah menambahkan file ke lokasi data sorun. Selanjutnya misalkan kita ingin membuka direktori pictures maka kita dapat menuliskannya menjadi:
 
 > **sorun data pic**
 
@@ -74,4 +74,6 @@ Keterangan:
 - sorun: untuk nama programnya
 - data: untuk nama filenya
 - pic: untuk inisial lokasi yang ingin dibuka
+
+> **Catatan:** Perlu menambahkan program sorun terlebih dahulu ke path environment windows.
 
