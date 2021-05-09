@@ -1,4 +1,3 @@
-Imports System
 Imports System.IO
 Imports System.Reflection
 
@@ -32,8 +31,15 @@ Module Program
                 Console.WriteLine(app_version)
                 End
 
+                'help
+            ElseIf (args(0).ToString().ToLower() = ":h" Or args(0).ToString().ToLower() = ":help") Then
+                Dim target_url = "https://github.com/auXtern/Sorun"
+                Process.Start("cmd", "/c start " & target_url)
+                End
+
             Else
 
+                'other
                 If (args.Length >= 2) Then
 
                     If (args(0).ToString().ToLower() = ":o" Or args(0).ToString().ToLower() = ":open") Then
@@ -145,8 +151,8 @@ Module Program
                                 End If
 
                             ElseIf line_info(0) = "-u" Then
-                                Dim file_url = line_info(2).ToString.Replace(Chr(34), "")
-                                Process.Start("cmd", "/c start " & file_url)
+                                Dim target_url = line_info(2).ToString.Replace(Chr(34), "")
+                                Process.Start("cmd", "/c start " & target_url)
                                 End
 
                             End If
