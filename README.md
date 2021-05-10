@@ -1,4 +1,4 @@
-﻿# Sorun
+# Sorun
 Mengakses lokasi file dan direktori menjadi lebih mudah.
 
 
@@ -35,7 +35,7 @@ untuk argumen :o membutuhkan argumen tambahan yaitu nama file sorun tanpa extens
 
 Semua lokasi file dan direktori perlu dibuatkan dalam sebuah file dengan extension **.sorun**. Untuk penggunaan file sorun dapat ditulis dengan:
 
-> **sorun** *<nama_file> <inisial>*
+> **sorun** *<nama_file>* *<inisial>*
 
 Setiap baris pada file memuat informasi berikut:
 
