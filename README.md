@@ -4,6 +4,7 @@ Mengakses lokasi file dan direktori menjadi lebih mudah.
 
 
 ## **sorun** *<argumen>*
+> **sorun** *<_argumen>*
 
 | Argumen         | Deskripsi                                       |
 |-----------------|-------------------------------------------------|
