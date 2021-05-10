@@ -1,4 +1,4 @@
-# Sorun
+﻿# Sorun
 Mengakses lokasi file dan direktori menjadi lebih mudah.
 
 
@@ -58,11 +58,11 @@ Pada informasi identifikasi dapat menggunakan perintah berikut:
 Contoh file .sorun, misalkan nama filenya adalah **data.sorun**:
 
 ```sorun
--d||pic||C:\Users\AbdullahUbaid\Pictures
--f||me||"C:\Users\AbdullahUbaid\Pictures\Abdullah_Ubaids.png"
--s||sme||"C:\Users\AbdullahUbaid\Pictures\Abdullah_Ubaids.png"
--u||github||https://github.com/
--p||jpc||"D:\Program Files\jcpicker.exe"
+-d|pic|C:\Users\AbdullahUbaid\Pictures
+-f|me|"C:\Users\AbdullahUbaid\Pictures\Abdullah_Ubaids.png"
+-s|sme|"C:\Users\AbdullahUbaid\Pictures\Abdullah_Ubaids.png"
+-u|github|https://github.com/
+-p|jpc|"D:\Program Files\jcpicker.exe"
 ```
 
 Setelah menambahkan file ke lokasi data sorun. Selanjutnya misalkan kita ingin membuka direktori pictures maka kita dapat menuliskannya menjadi:

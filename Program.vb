@@ -1,4 +1,4 @@
-Imports System.IO
+﻿Imports System.IO
 Imports System.Reflection
 
 'Auxtern Projects 2021
@@ -54,6 +54,8 @@ Module Program
                         Console.WriteLine("-p : target is program")
                         Console.WriteLine("-u : target is url")
                         Console.WriteLine("")
+                        Console.WriteLine("sorun " & args(1) & " <initial>")
+                        Console.WriteLine("")
                         For Each line As String In File.ReadLines(source_file)
                             'read data in file sorun
                             Dim line_info = line.Split("||")
@@ -64,11 +66,14 @@ Module Program
                             End If
                             Console.WriteLine(line)
                         Next line
+                        Console.WriteLine("")
+                        Console.Write("press anything to exit...")
+                        Console.ReadLine()
                         End
 
 
                         'add file sorun to data
-                    ElseIf (args(0).ToString().ToLower() = ":a" Or args(0).ToString().ToLower() = ":append") Then
+                    ElseIf (args(0).ToString().ToLower() = ":a" Or args(0).ToString().ToLower() = ":add") Then
                         Dim source_path As String
                         Dim target_path As String
                         Dim source_extension As String
@@ -110,10 +115,16 @@ Module Program
 
                         For Each line As String In File.ReadLines(source_file)
                             'read data in file sorun
-                            Dim line_info = line.Split("||")
+
+                            Dim line_info = line.Split("|")
+
                             If line_info.Length < 3 Then
                                 Continue For
-                            ElseIf Not line_info(0) = "-d" And Not line_info(0) = "-f" And Not line_info(0) = "-u" And Not line_info(0) = "-p" And Not line_info(0) = "-s" Then
+                            ElseIf Not line_info(0) = "-d" And
+                                Not line_info(0) = "-f" And
+                                Not line_info(0) = "-u" And
+                                Not line_info(0) = "-p" And
+                                Not line_info(0) = "-s" Then
                                 Continue For
                             End If
 
@@ -130,10 +141,20 @@ Module Program
                                     End
                                 End If
 
-                            ElseIf line_info(0) = "-f" Or line_info(0) = "-p" Then
+                            ElseIf line_info(0) = "-f" Then
                                 Dim file_path = line_info(2)
                                 If File.Exists(file_path.ToString.Replace(Chr(34), "")) Then
                                     Process.Start("cmd", "/c " & file_path)
+                                    End
+                                Else
+                                    Console.WriteLine(-2)
+                                    End
+                                End If
+
+                            ElseIf line_info(0) = "-p" Then
+                                Dim file_path = line_info(2)
+                                If File.Exists(file_path.ToString.Replace(Chr(34), "")) Then
+                                    Process.Start(file_path)
                                     End
                                 Else
                                     Console.WriteLine(-2)

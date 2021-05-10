@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Sorun": {
-      "commandName": "Project",
-      "commandLineArgs": ":t 0"
-    }
-  }
-}
