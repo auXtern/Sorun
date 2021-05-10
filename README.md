@@ -75,5 +75,5 @@ Keterangan:
 - data: untuk nama filenya
 - pic: untuk inisial lokasi yang ingin dibuka
 
-> **Catatan:** Perlu menambahkan program sorun terlebih dahulu ke path environment windows.
+> **Catatan:** Perlu menambahkan program sorun terlebih dahulu ke path environment windows jika program tidak berjalan.
 
